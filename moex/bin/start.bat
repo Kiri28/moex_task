@@ -1,0 +1,1 @@
+~:\Applications\Python%3.7\Python%Launcher ~:\Desktop\moex\main.py %
