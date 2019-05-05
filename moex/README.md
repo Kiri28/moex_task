@@ -9,4 +9,7 @@ __________________
 [doc]:https://github.com/Kiri28/moex_task/tree/master/moex/doc
 [src]:https://github.com/Kiri28/moex_task/tree/master/moex/src
 _________________
-sd
+## Первый запуск:  
+В каталоге [bin] содержатся исполняемые файлы. Для того чтобы запустить программу, необходимо запустить один из файлов: start.sh или start.bat.  
+[bin]:https://github.com/Kiri28/moex_task/tree/master/moex/bin
+## Внимание!!!  
