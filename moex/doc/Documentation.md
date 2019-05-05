@@ -1,1 +1,32 @@
+[![Python](https://img.shields.io/badge/python-3.6.5-blue.svg)](https://www.python.org/)
+[![Anaconda](https://img.shields.io/badge/Anaconda-3.0-green.svg)](https://www.anaconda.com/distribution/)
+____________
+Данное программное обеспечение является тестовым заданием направления разработка отдела информациооных продуктов и сервисов.
+_____________
+## Т.З.  
+### Дано:  
+Текстовый лог, состоящий из записей вида:  
+1) Входящая команда:   
+<время >...<id команды>...input process...<тип команды>...<параметры команды>.  
+2) Ответ на команду:   
+<время >...<id команды>...output process...<тип ответа>...<параметры ответа>.  
+  
+Входящая команда и ответ на нее имеют одинаковый id, например:   
+   
+22:59:58.279565;P2Proxy;;Seq 103476178, id 0xc8dd5fb262b2e1c8, input process 5 mcs, post 7 mcs, arrival time 11966351813781 mcs, type 1, msg_rev 0,  
+messageType 0, msg_size 356, P2Login P2Robot, P2ReplyId -3972914076506201656, outType 1, MQAddress P2Robot.ROBOT_C_Sender3, p2proxyTime.  
+38563399571758, p2channel 31770575371210461, BrokerCode FT02, Isin Eu-6.17, ClientCode 009, CotirContr 1, OrderType 2, Amount 1, StrPrice.  
+63650.00000, Comment MEWG000000002a6ea855, Login , ext_id 836935, fix_client_operation_id , du 0, is_check_limit 0, StrDateExp 1900/01/01.  
+00:00:00.000, Hedge 0, DontCheckMoney 0, LocalStamp 1900/01/01 00:00:00.000, OrderId 0, MatchRef ;TID 2500.  
+
+22:59:58.279771;P2Proxy;;Seq 103476179, reply for id 0xc8dd5fb262b2e1c8, output process 7 mcs, post 10 mcs, reply time 11966351813989 mcs, type 101,   
+P2ReplyCode 32, p2channel 70df2b834f8edd, messageType 0xbad00, order_id 0;TID 11916.   
+
+type 1 - тип входной команды;   
+type 101 - тип ответа.   
+
+Одному типу ответа может соответствовать несколько разных типов входных команд.  
+
+Задержка - время между получением ответа и появлением входящей команды в логе.  
+Например, в данном случае задержка: 22:59:58.279771 - 22:59:58.279565 = 206 микросекунд.  
 
